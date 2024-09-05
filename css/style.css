@@ -1,0 +1,89 @@
+nav {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid #FCEBD4;
+}
+.container-fluid {
+    display: block !important;
+}
+#navCont {
+    display: flex;
+    justify-content: space-between;
+}
+#navCont a {
+    font-weight: bold !important;
+    font-size: 20px !important;
+}
+nav a {
+    color: #FCEBD4 !important;
+}
+body {
+    background-image: url(/img/panaderia6.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+}
+header {
+    text-align: center;
+    backdrop-filter: brightness(60%);
+    -webkit-backdrop-filter: brightness(60%);
+}
+article {
+    display: flex;
+    justify-content: space-between;
+}
+article div p:first-child {
+    font-size: 28px;
+    font-weight: bold;
+}
+main {
+    background-color: #f4ede4;
+}
+main p {
+    color: #503a28;
+}
+img.imagen {
+    box-shadow: 0 0 20px 0 #b1957b;
+    border-radius: 5px;
+    /* max-width: 100%; */
+    height: auto;
+}
+footer {
+    background-color: #784B2A;
+    color: #AB907C !important;
+}
+#preFooter {
+    background-color: #AB907C;
+    color: #784B2A;
+    text-align: center;
+}
+#preFooter p:first-child {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .container-fluid {
+        display: flex !important;
+    }
+    #navbarNav {
+        justify-content: end;
+    }
+    article {
+        flex-direction: row;
+    }
+}
+@media (max-width: 1200px) {
+    article {
+        flex-direction: column;
+    }
+    img.imagen {
+        max-width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+        background-size: 800px 500px;
+    }
+}
