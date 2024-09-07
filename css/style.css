@@ -1,3 +1,7 @@
+hr {
+    color: black;
+    align-items: center;
+}
 nav {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -28,6 +32,18 @@ header {
     backdrop-filter: brightness(60%);
     -webkit-backdrop-filter: brightness(60%);
 }
+/* header div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+} */
+#cabecera {
+    text-align: center;
+    color: #503a28;
+    font-weight: bold;
+    font-size: 34px;
+}
 article {
     display: flex;
     justify-content: space-between;
@@ -39,14 +55,17 @@ article div p:first-child {
 main {
     background-color: #f4ede4;
 }
-main p {
-    color: #503a28;
+main p, h5, small {
+    color: #503a28 !important;
 }
 img.imagen {
     box-shadow: 0 0 20px 0 #b1957b;
     border-radius: 5px;
     /* max-width: 100%; */
     height: auto;
+}
+.h-100 {
+    box-shadow: 0 0 20px 0 #b1957b !important;
 }
 footer {
     background-color: #784B2A;
@@ -61,6 +80,27 @@ footer {
     font-size: 50px;
     font-weight: bold;
 }
+/* DE PRODUCTOS HTML */
+.carousel .carousel-control-next-icon, .carousel .carousel-control-prev-icon {
+    filter: invert(1) grayscale(100);
+}
+.carousel .carousel-control-next {
+    justify-content: end;
+}
+.carousel .carousel-control-prev{
+    justify-content: start;
+}
+.carousel .carousel-indicators {
+    filter: invert(1) grayscale(100);
+}
+/* .fila {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+} */
 
 @media (min-width: 768px) {
     .container-fluid {
