@@ -38,12 +38,6 @@ header {
     align-items: center;
     justify-content: center;
 } */
-#cabecera {
-    text-align: center;
-    color: #503a28;
-    font-weight: bold;
-    font-size: 34px;
-}
 article {
     display: flex;
     justify-content: space-between;
@@ -93,6 +87,12 @@ footer {
 .carousel .carousel-indicators {
     filter: invert(1) grayscale(100);
 }
+#cabecera, .cabecera {
+    text-align: center;
+    color: #503a28;
+    font-weight: bold;
+    font-size: 34px;
+}
 /* .fila {
     display: flex;
     flex-direction: row;
@@ -101,6 +101,26 @@ footer {
     font-size: 50px;
     font-weight: bold;
 } */
+/* DE INICIAR SESION HTML */
+.card {
+    box-shadow: 0 0 20px 0 #b1957b;
+    background-color: #fff;
+    border-radius: 10px;
+}
+legend {
+    text-align: center;
+}
+form input.btn {
+    background-color: #784B2A;
+    border: #000;
+}
+form input.btn:active, input.btn:hover {
+    background-color: #503a28 !important;
+    border: #000 !important;
+}
+form a {
+    color: #784B2A;
+}
 
 @media (min-width: 768px) {
     .container-fluid {
