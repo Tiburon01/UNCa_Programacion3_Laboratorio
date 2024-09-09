@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" href="/img/Logo_El-Mana.png" type="image/x-icon">
     <title>Crear cuenta</title>
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-md navbar-dark px-3">
+        <div class="container-fluid">
+            <div id="navCont">
+                <a class="navbar-brand" href="../index.html">EL MANA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/html/gestion de productos/productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/html/gestion de usuario/iniciar-sesion.html">Usuario</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="mx-5 px-5 pt-5">
+            <h1>Desayuno sin diamantes…<br>…pero con mucha miga</h1>
+            <img src="../../img/Logo_El-Mana_Sin-Fondo.png" alt="imagen de panes" width="250" height="250">
+        </div>
+    </header>
+    <main class="py-5" id="cuerpo">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-xl-5">
+                <div class="card">
+                    <div class="card-body">
+                        <form action="">
+                            <div class="p-3">
+                                <legend class="pb-2 pt-4">Crear cuenta</legend>
+                                <label class="form-label" for="usuario">Nombre de usuario</label>
+                                <input class="form-control mb-2" type="text" name="usuario" required>
+                                <label class="form-label" for="nombre">Nombre</label>
+                                <input class="form-control mb-2" type="text" name="nombre" required>
+                                <label class="form-label" for="apellido">Apellido</label>
+                                <input class="form-control mb-2" type="text" name="apellido" required>
+                                <label class="form-label" for="correo">Correo electrónico</label>
+                                <input class="form-control mb-2" type="email" name="correo" required>
+                                <label class="form-label" for="fechNac">Fecha de nacimiento</label>
+                                <input class="form-control mb-2" type="date" name="fechNac" required>
+                                <label class="form-label" for="telefono">Telefono</label>
+                                <input class="form-control mb-2" type="number" name="telefono" required>
+                                <label class="form-label" for="contrasena">Contraseña</label>
+                                <input class="form-control mb-2" type="password" name="contrasena" required>
+                                <label class="form-label" for="confirmarContrasena">Confirmar Contraseña</label>
+                                <input class="form-control mb-4" type="password" name="confirmarContrasena" required>
+                                <input class="btn btn-primary w-100" type="submit" value="Registrarse">
+                                <p class="mt-3">¿Ya tienes una cuenta? <a href="iniciar-sesion.html">iniciar sesión</a></p>
+                            </div>
+                        </form>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="py-5" id="preFooter">
+        <p>EL MANA</p>
+        <p>© Panadería y Pastelería El Mana – 2024</p>    
+    </div>
+    <footer class="px-5 py-3">
+        <p class="m-0">© Panadería y Pastelería El Mana – 2024</p>    
+    </footer>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
